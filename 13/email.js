@@ -1,5 +1,7 @@
 var nodemailer = require('nodemailer');
 
+
+
 var transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 465,
@@ -10,12 +12,17 @@ var transporter = nodemailer.createTransport({
   },
 });
 
+
+
+
 var mailOptions = {
   from: 'yashuk803@gmail.com',
   to: 'yashuk803@gmail.com',
   subject: 'Sending Email using Node.js',
   text: 'That was easy!'
 };
+
+
 
 transporter.sendMail(mailOptions, function(error, info){
   if (error) {
