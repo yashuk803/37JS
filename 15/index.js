@@ -21,7 +21,7 @@ class ReadFile {
     constructor(filename, res) {
         this.filename = filename;
         this.res = res;
-        this.size = 5000;
+        this.size = 5000; 
     }
 
     read() {
@@ -64,13 +64,11 @@ var server = http.createServer(function(req, res) {
 
     switch (req.url) {
         case '/stream':
-            readFile = new ReadFile('file.text', res);
-            readFile.getSize();
+            let readFile = new ReadFile('file.text', res);
             readFile.read();
             break;
         case '/file':
-            readFile = new ReadFile('file.text', res);
-            readFile.getSize();
+            let readFile = new ReadFile('file.text', res);
             readFile.read();
             break;
         default:
