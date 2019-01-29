@@ -1,9 +1,6 @@
 var nodemailer = require('nodemailer');
 
-/**
- * Сreate reusable transporter object 
- * using the default SMTP transport
- */
+
 
 var transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
@@ -15,11 +12,7 @@ var transporter = nodemailer.createTransport({
   },
 });
 
-/**
- * Run in metres
- *
- * @param int $metres Metres
- */
+
 
 
 var mailOptions = {
@@ -29,11 +22,7 @@ var mailOptions = {
   text: 'That was easy!'
 };
 
-/**
- * Run in metres
- *
- * @param int $metres Metres
- */
+
 
 transporter.sendMail(mailOptions, function(error, info){
   if (error) {

@@ -73,6 +73,9 @@ emt.on('read', function readFileContent(fileName, user) {
 function readFile(err, data) {
     console.log("Reading " + data + " file done successfully.");
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 8cf3177a4895d2cde013c5ceed8fb857754e5b3b
