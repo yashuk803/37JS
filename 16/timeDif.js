@@ -13,7 +13,6 @@ var getTimezone = require('./getTimezone.js');
  *@return {string} Возращает название города и разницу в часах
  */
 
-
 class TimeDif {
 
     constructor(kay, oneTown, otherTown) {
