@@ -1,0 +1,146 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+  meta(name='description', content='')
+  meta(name='author', content='')
+  link(rel='icon', href='favicon.ico')
+  title Nantes - Onepage Business Template
+  // Bootstrap core CSS
+  link(href='css/bootstrap.min.css', rel='stylesheet')
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+  // Custom styles for this template
+  link(href='css/owl.carousel.css', rel='stylesheet')
+  link(href='css/owl.theme.default.min.css', rel='stylesheet')
+  link(href='css/animate.css', rel='stylesheet')
+  link(href='css/style.css', rel='stylesheet')
+// Navigation
+nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header.page-scroll
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.page-scroll(href='#page-top')
+    // Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li.hidden
+          a(href='/')
+        li
+          a.page-scroll(href='/') Home
+        li
+          a.page-scroll(href='/about') About
+        li
+          a.page-scroll(href='#portfolio') Portfolio
+        li
+          a.page-scroll(href='/contact') Contact
+    // /.navbar-collapse
+  // /.container-fluid
+block content
+footer
+  .container.text-center
+    p
+      | Treval site
+// Modal for portfolio item 1
+#Modal-1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='Modal-label-1')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+        h4#Modal-label-1.modal-title Dean &amp; Letter
+      .modal-body
+        img.img-responsive(src='images/demo/portfolio-1.jpg', alt='img01')
+        .modal-works
+          span Branding
+          span Web Design
+        p
+          | Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+// Modal for portfolio item 2
+#Modal-2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='Modal-label-2')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+        h4#Modal-label-2.modal-title Startup Framework
+      .modal-body
+        img.img-responsive(src='images/demo/portfolio-2.jpg', alt='img01')
+        .modal-works
+          span Branding
+          span Web Design
+        p
+          | Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+// Modal for portfolio item 3
+#Modal-3.modal.fade(tabindex='-1', role='dialog', aria-labelledby='Modal-label-3')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+        h4#Modal-label-3.modal-title Lamp &amp; Velvet
+      .modal-body
+        img.img-responsive(src='images/demo/portfolio-3.jpg', alt='img01')
+        .modal-works
+          span Branding
+          span Web Design
+        p
+          | Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+// Modal for portfolio item 4
+#Modal-4.modal.fade(tabindex='-1', role='dialog', aria-labelledby='Modal-label-4')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+        h4#Modal-label-4.modal-title Smart Name
+      .modal-body
+        img.img-responsive(src='images/demo/portfolio-4.jpg', alt='img01')
+        .modal-works
+          span Branding
+          span Web Design
+        p
+          | Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+// Modal for portfolio item 5
+#Modal-5.modal.fade(tabindex='-1', role='dialog', aria-labelledby='Modal-label-5')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+        h4#Modal-label-5.modal-title Fast People
+      .modal-body
+        img.img-responsive(src='images/demo/portfolio-5.jpg', alt='img01')
+        .modal-works
+          span Branding
+          span Web Design
+        p
+          | Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+//
+  Bootstrap core JavaScript
+  ==================================================
+// Placed at the end of the document so the pages load faster
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/cbpAnimatedHeader.js')
+script(src='js/jquery.appear.js')
+script(src='js/SmoothScroll.min.js')
+script(src='js/theme-scripts.js')
