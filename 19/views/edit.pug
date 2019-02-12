@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1 Все курсы Академии
+
+	form(method="post")
+		fieldset.form.group
+			label(for="name") Name:
+			input.form-control(id="name", name="name", type="text", placeholder="Введите имя курса", value=course.name)
+			small.text-muted Добавить свой новый курсы.
+		button.btn.btn-primary(type="submit") Сохранить курсы
+		a.btn.btn-default(href="/courses") Отмена
