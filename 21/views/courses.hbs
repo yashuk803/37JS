@@ -1,0 +1,25 @@
+<h1>Все курсы Академии</h1>
+<a href="/courses/add" class="btn btn-primary"> Создать новый курс</a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id Курса</th>
+        <th>Курс</th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each courses}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td style="width: 50px"><a href="/courses/edit/{{id}}" ><span class="glyphicon glyphicon-pencil"></span></a>
+            </td>
+            <td style="width: 50px"><a href="/courses/delete/{{id}}" ><span
+                    class="glyphicon glyphicon-remove"></span></a></td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+

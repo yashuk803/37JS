@@ -15,7 +15,6 @@ function textReplace(options, content) {
 	var newContent = content.toString();
 	for (var key in options) {
 		if(typeof options[key] !== 'string') continue;
-
 		newContent = newContent.replace('{%'+ key +'%}', ''+ options[key] +'');
       }
       return newContent;
